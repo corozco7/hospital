@@ -10,7 +10,7 @@ from hospital.appointment.views import clients as clients_views
 urlpatterns = [
     path(
         route='',
-        view=clients_views.TestView.as_view(),
+        view=clients_views.MainView.as_view(),
         name='main'
     )
 ]

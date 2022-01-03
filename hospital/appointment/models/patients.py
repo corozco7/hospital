@@ -7,6 +7,7 @@ from django.db import models
 from hospital.users.models import User
 
 # Utilities
+from hospital.base.data import DocumentTypeOptions, GenderOptions
 from hospital.utils.models import BaseModel
 
 
@@ -16,5 +17,4 @@ class Patient(BaseModel):
     user = models.OneToOneField(
         User,
         on_delete=models.CASCADE,
-        verbose_name="Paciente"
     )
