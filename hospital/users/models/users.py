@@ -41,7 +41,7 @@ class User(BaseModel, AbstractUser):
     REQUIRED_FIELDS = ['email', 'first_name', 'last_name']
 
     def save(self, *args, **kwargs):
-        username = self.first_name[0] + self.last_name [1:]
+        username = str(self.first_name[0] + self.last_name [0:]).lower()
 
         us = User.objects.filter(username=username)
 

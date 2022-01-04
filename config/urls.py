@@ -7,5 +7,6 @@ urlpatterns = [
 
     path('', include(('hospital.users.urls.login', 'login'), namespace='login')),
     path('', include(('hospital.appointment.urls.clients', 'clients'), namespace='clients')),
-    path('doctors/', include(('hospital.appointment.urls.doctors', 'doctors'), namespace='doctors'))
+    path('doctors/', include(('hospital.appointment.urls.doctors', 'doctors'), namespace='doctors')),
+    path('patients/', include(('hospital.appointment.urls.patients', 'patients'), namespace='patients'))
 ]

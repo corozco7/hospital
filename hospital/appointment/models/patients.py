@@ -7,7 +7,6 @@ from django.db import models
 from hospital.users.models import User
 
 # Utilities
-from hospital.base.data import DocumentTypeOptions, GenderOptions
 from hospital.utils.models import BaseModel
 
 
